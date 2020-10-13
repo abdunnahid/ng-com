@@ -1,0 +1,46 @@
+<section class="page page-list page-home">
+
+  <header>
+    <h1>Hacks</h1>
+    <h3>Useful reusable pieces built with Angular, Angular Material and some sort of Hack</h3>
+  </header>
+
+  <main>
+    <div class="card-layout">
+
+      <div class="home-card" *ngFor="let item of data">
+
+        <div class="home-card-header">
+          <h2 class="home-card-title">{{item.title}}</h2>
+          <h4 class="home-card-subtitle">{{item.subtitle}}</h4>
+        </div>
+
+        <div class="home-card-content">
+          <p>
+            {{item.content}}
+          </p>
+        </div>
+
+        <div class="home-card-actions">
+          <div class="left-actions">
+            <a mat-stroked-button color="accent" [routerLink]="item.route">
+              View
+            </a>
+            <a class="blog-btn" mat-button *ngIf="item.blogUrl" [href]="item.blogUrl" target="_blank">
+              Blog
+            </a>
+          </div>
+
+          <div class="right-actions">
+            <a class="npm-badge" [href]="item.npmUrl" target="_blank">
+              <img alt="NPM Package version" [src]="item.badgeUrl">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+</section>

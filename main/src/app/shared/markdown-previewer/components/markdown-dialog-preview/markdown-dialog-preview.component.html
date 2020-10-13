@@ -1,0 +1,4 @@
+<div [hidden]="loaded">
+  <mat-spinner></mat-spinner>
+</div>
+<markdown [src]="filePath" (load)="loaded = true"></markdown>

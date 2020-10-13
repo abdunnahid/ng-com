@@ -1,0 +1,84 @@
+<section class="page page-details uploader-page">
+
+  <header>
+    <h1>Uploader</h1>
+  </header>
+
+  <main>
+
+    <div class="info">
+      <mat-expansion-panel>
+
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h2>Info</h2>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="info-content">
+          <mat-list role="list">
+
+            <div mat-subheader>About</div>
+
+            <mat-list-item role="listitem">
+              <mat-icon mat-list-icon>done_all</mat-icon>
+              <h3 mat-line>Picks image or file.</h3>
+            </mat-list-item>
+
+            <div mat-subheader>Don't understand what it does?</div>
+
+            <mat-list-item role="listitem">
+              <mat-icon mat-list-icon>navigate_next</mat-icon>
+              <h3 mat-line>Try different examples below.</h3>
+            </mat-list-item>
+
+            <mat-list-item role="listitem">
+              <mat-icon mat-list-icon>navigate_next</mat-icon>
+              <h3 mat-line>Some demonstrates basic example and some with advance features</h3>
+            </mat-list-item>
+
+            <mat-list-item role="listitem">
+              <mat-icon mat-list-icon>playlist_add_check</mat-icon>
+              <h3 mat-line>Checkout the payload of the examples.</h3>
+            </mat-list-item>
+
+          </mat-list>
+
+          <mat-list role="list">
+            <div mat-subheader>Installation & Usage</div>
+            <mat-list-item role="listitem">
+              <a class="mr-10" href="https://www.npmjs.com/package/@nghacks/uploader" target="_blank" color="accent"
+                mat-flat-button>
+                NPM
+              </a>
+              <a class="mr-10" href="https://github.com/abdunnahid/nghacks/tree/master/main/projects/uploader" target="_blank"
+                color="accent" mat-stroked-button>
+                GitHub
+              </a>
+              <a class="mr-10"
+                href="https://github.com/abdunnahid/nghacks/tree/master/main/src/app/consumer-modules/uploader"
+                target="_blank" color="accent" mat-button>
+                How this page made
+              </a>
+            </mat-list-item>
+          </mat-list>
+
+        </div>
+      </mat-expansion-panel>
+    </div>
+
+    <mat-tab-group mat-align-tabs="start" animationDuration="0ms">
+
+      <mat-tab label="Image Uploader">
+        <app-image-uploader></app-image-uploader>
+      </mat-tab>
+
+      <mat-tab label="File Uploader">
+        <app-file-uploader></app-file-uploader>
+      </mat-tab>
+
+    </mat-tab-group>
+
+  </main>
+
+</section>

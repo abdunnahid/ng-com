@@ -1,0 +1,35 @@
+{
+  "name": "@nghacks/dynamic-browser-title",
+  "version": "0.1.0",
+  "description": "Updates browser title dynamically & automatically on route change",
+  "keywords": [
+    "angular",
+    "title",
+    "nghacks",
+    "BrowserTitle",
+    "service",
+    "ng",
+    "ngx"
+  ],
+  "author": {
+    "name": "Abdun Nahid",
+    "email": "abdun.nahid@gmail.com",
+    "url": "https://abdun-nahid.web.app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abdunnahid/nghacks.git"
+  },
+  "homepage": "https://ng-hack.web.app",
+  "bugs": "https://github.com/abdunnahid/nghacks/issues",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "@angular/common": "^10.0.5",
+    "@angular/core": "^10.0.5",
+    "rxjs": "~6.5.5"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

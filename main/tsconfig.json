@@ -1,0 +1,69 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "allowJs": true
+  },
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngmat-table-query-reflector/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ngmat-table-query-reflector/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/dynamic-browser-title/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/dynamic-browser-title/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/uploader/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/uploader/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/info-dialog/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/info-dialog/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/image-viewer/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/image-viewer/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/quantity-input/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/quantity-input/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/rating-input/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/rating-input/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/banner-carousel/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/banner-carousel/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/overflow-carousel/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/overflow-carousel/tsconfig.spec.json"
+    }
+  ],
+}

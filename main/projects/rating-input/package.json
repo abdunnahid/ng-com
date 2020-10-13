@@ -1,0 +1,43 @@
+{
+  "name": "@nghacks/rating-input",
+  "version": "1.0.0",
+  "description": "Rating input for products/services.",
+  "keywords": [
+    "angular",
+    "material",
+    "AngularMaterial",
+    "nghacks",
+    "input",
+    "form",
+    "rating",
+    "number",
+    "counter",
+    "star",
+    "heart",
+    "ng",
+    "ngx",
+    "ngMat"
+  ],
+  "author": {
+    "name": "Abdun Nahid",
+    "email": "abdun.nahid@gmail.com",
+    "url": "https://abdun-nahid.web.app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abdunnahid/nghacks.git"
+  },
+  "homepage": "https://ng-hack.web.app",
+  "bugs": "https://github.com/abdunnahid/nghacks/issues",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "@angular/common": "^10.0.5",
+    "@angular/core": "^10.0.5",
+    "@angular/material": "^10.1.1",
+    "rxjs": "~6.5.5"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}
