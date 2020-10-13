@@ -67,12 +67,12 @@ export class LayoutComponent implements OnInit, AfterViewInit {
   private _setSidenavAccordingScreenSize(value: 'xs' | 'sm' | 'md' | 'lg' | 'xl'): void {
     if (value === 'xs' || value === 'sm' || value === 'md') {
       this.sidenavDrawer.mode = 'over';
-      this.sidenavDrawer.close();
     }
     else {
       this.sidenavDrawer.mode = 'side';
-      this.sidenavDrawer.open();
     }
+    this.sidenavDrawer.close();
+
     setTimeout(() => {
       this.loadContent = true;
     }, 500);

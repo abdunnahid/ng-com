@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from './layout/layout.module';
 import { HttpClientModule } from '@angular/common/http';
 
-import { DynamicBrowserTitleModule } from 'dynamic-browser-title';
+import { DynamicBrowserTitleModule } from '@nghacks/dynamic-browser-title';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { DynamicBrowserTitleModule } from 'dynamic-browser-title';
     LayoutModule,
     HttpClientModule,
     DynamicBrowserTitleModule.forRoot({
-      selector: '.page header h1'
+      selector: 'h1#browser-title'
     })
   ],
   providers: [],

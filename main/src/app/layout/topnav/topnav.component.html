@@ -1,24 +1,33 @@
 <mat-toolbar class="topnav">
   <mat-toolbar-row>
 
-    <button *ngIf="!hideMenuToggleButton" color="accent" type="button" mat-icon-button
-      class="menu-toggle-btn mat-elevation-z2" (click)="openSideNav()">
+    <button *ngIf="!hideMenuToggleButton" type="button" mat-icon-button
+      class="menu-toggle-btn" (click)="openSideNav()">
       <mat-icon>menu</mat-icon>
     </button>
 
     <div class="topnav-content">
 
       <div class="topnav-content-left">
-        <!-- <span>Toolbar</span> -->
+        <span>Search Bar</span>
       </div>
 
       <div class="topnav-content-right">
-        <a mat-raised-button href="https://github.com/abdunnahid/nghacks" target="_blank" class="profile">
+        <a mat-raised-button target="_blank" class="profile mr-10">
           <span class="img-container">
-            <img src="assets/logos/github.png" alt="">
+            <img src="https://abdun-nahid.web.app/assets/img/abdunnahid.jpg" alt="profile picture">
           </span>
           <span class="name">
-            GitHub
+            Nahid
+          </span>
+        </a>
+
+        <a mat-raised-button target="_blank" class="profile">
+          <span class="img-container">
+            <mat-icon>shopping_cart</mat-icon>
+          </span>
+          <span class="name">
+            Cart
           </span>
         </a>
       </div>
