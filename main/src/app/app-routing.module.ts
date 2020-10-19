@@ -5,8 +5,12 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./home/home.module')
-      .then(module => module.HomeModule),
-    pathMatch: 'full'
+      .then(module => module.HomeModule)
+  },
+  {
+    path: 'search',
+    loadChildren: () => import('./search-result/search-result.module')
+      .then(module => module.SearchResultModule)
   },
   {
     path: '**',

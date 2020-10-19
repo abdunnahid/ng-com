@@ -1,0 +1,89 @@
+<div class="search-bar" [ngClass]="{'input-focused': isInputFocused}">
+
+  <div class="search-input-container">
+
+    <mat-icon>search</mat-icon>
+
+    <input
+      #searchInput
+      [formControl]="searchCtrl"
+      (keyup.enter)="search()"
+      (keydown)="onKeydown($event)"
+      (focus)="onSearchFocus()"
+      class="search-input"
+      type="search"
+      autocomplete="off"
+      name="q"
+      placeholder="Search for products">
+
+  </div>
+
+  <div class="search-content-container" *ngIf="isInputFocused">
+
+    <mat-divider style="margin: 0 20px;"></mat-divider>
+
+    <div class="search-items">
+      <mat-list>
+
+        <ng-container *ngIf="userTypedSomething; else defaultSearchSuggestionsTemplate">
+
+          <search-item (click)="search(searchCtrl.value)" [searchItem]="searchCtrl.value">
+            <mat-list-item>
+              <mat-icon mat-list-icon>search</mat-icon>
+              <div mat-line>Search for "{{searchCtrl.value}}"</div>
+            </mat-list-item>
+          </search-item>
+
+          <ng-container *ngIf="suggestedSearchResult?.length">
+            <div mat-subheader>Suggestions</div>
+
+            <search-item (click)="search(searchItem)" [searchItem]="searchItem" *ngFor="let searchItem of suggestedSearchResult">
+              <mat-list-item>
+                <mat-icon mat-list-icon>history</mat-icon>
+                <div mat-line>{{searchItem}}</div>
+              </mat-list-item>
+            </search-item>
+          </ng-container>
+
+
+        </ng-container>
+
+      </mat-list>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Default Search Suggestions -->
+<ng-template #defaultSearchSuggestionsTemplate>
+
+  <!-- Recently Searched -->
+  <ng-container *ngIf="recentlySearched?.length">
+    <div mat-subheader>Recently Searched</div>
+
+    <search-item (click)="search(searchItem)" [searchItem]="searchItem" *ngFor="let searchItem of recentlySearched">
+      <mat-list-item>
+        <mat-icon mat-list-icon>history</mat-icon>
+        <div mat-line>{{searchItem}}</div>
+      </mat-list-item>
+    </search-item>
+
+    <mat-divider></mat-divider>
+  </ng-container>
+
+  <!-- Discover -->
+  <ng-container *ngIf="discoverSearchResult?.length">
+    <div mat-subheader>Discover</div>
+
+    <search-item (click)="search(searchItem)" [searchItem]="searchItem" *ngFor="let searchItem of discoverSearchResult">
+      <mat-list-item>
+        <mat-icon mat-list-icon>history</mat-icon>
+        <div mat-line>{{searchItem}}</div>
+      </mat-list-item>
+    </search-item>
+
+  </ng-container>
+
+</ng-template>

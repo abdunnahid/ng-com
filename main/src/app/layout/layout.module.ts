@@ -14,7 +14,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatRippleModule } from '@angular/material/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
-
+import { SearchBarModule } from '../search-bar/search-bar.module';
 @NgModule({
   declarations: [
     LayoutComponent,
@@ -33,7 +33,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     MatButtonModule,
     MatRippleModule,
     MatTooltipModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    SearchBarModule
   ],
   exports: [
     LayoutComponent
